@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <aside>
+        <nav>
+            <ul type="none">
+                <li><button class="tablinks" onclick="MenuUm(event, 'Ensino')">Ensino</li>
+                <div id="Ensino" class="tabcontent">
+                <ul type="none">
+                    <li><button class="tablinks" onclick="MenuDois(event, 'Boletim')">Boletim</button> </li>
+                    <li><button class="tablinks" onclick="MenuDois(event, 'Anotacoes')">Anotações</button> </li>
+                </ul>
+                </div>
+            </ul>
+        </nav>
+    </aside>
+
+    <div id="Boletim" class="tabcontent">
+        <button class="tablinks" onclick="MenuDois(event, 'Boletim')">Boletim</button>
+            <table class="boletim-tabela">
+                    <tr><td>materia1</td><td>qntdade de aulas</td><td>faltas</td><td>media</td><td>faltas2</td><td>media2</td><td>faltas3</td><td>media3</td></tr>
+                    <tr><td>materia2</td><td>qntdade de aulas</td><td>faltas</td><td>media</td><td>faltas2</td><td>media2</td><td>faltas3</td><td>media3</td></tr>
+                    <tr><td>materia3</td><td>qntdade de aulas</td><td>faltas</td><td>media</td><td>faltas2</td><td>media2</td><td>faltas3</td><td>media3</td></tr>
+                    <tr><td>materia4</td><td>qntdade de aulas</td><td>faltas</td><td>media</td><td>faltas2</td><td>media2</td><td>faltas3</td><td>media3</td></tr>
+                    <tr><td>materia5</td><td>qntdade de aulas</td><td>faltas</td><td>media</td><td>faltas2</td><td>media2</td><td>faltas3</td><td>media3</td></tr>
+                    <tr><td>materia6</td><td>qntdade de aulas</td><td>faltas</td><td>media</td><td>faltas2</td><td>media2</td><td>faltas3</td><td>media3</td></tr>
+                    <tr><td>materia7</td><td>qntdade de aulas</td><td>faltas</td><td>media</td><td>faltas2</td><td>media2</td><td>faltas3</td><td>media3</td></tr>
+                    <tr><td>materia8</td><td>qntdade de aulas</td><td>faltas</td><td>media</td><td>faltas2</td><td>media2</td><td>faltas3</td><td>media3</td></tr>
+                    <tr><td>materia9</td><td>qntdade de aulas</td><td>faltas</td><td>media</td><td>faltas2</td><td>media2</td><td>faltas3</td><td>media3</td></tr>
+                    <tr><td>materia10</td><td>qntdade de aulas</td><td>faltas</td><td>media</td><td>faltas2</td><td>media2</td><td>faltas3</td><td>media3</td></tr>
+                    <tr><td>materia11</td><td>qntdade de aulas</td><td>faltas</td><td>media</td><td>faltas2</td><td>media2</td><td>faltas3</td><td>media3</td></tr>
+                    <tr><td>materia12</td><td>qntdade de aulas</td><td>faltas</td><td>media</td><td>faltas2</td><td>media2</td><td>faltas3</td><td>media3</td></tr>
+                    <tr><td>materia13</td><td>qntdade de aulas</td><td>faltas</td><td>media</td><td>faltas2</td><td>media2</td><td>faltas3</td><td>media3</td></tr>
+             </table>
+        <button class="tablinks" onclick="MenuDois(event, 'Anotacoes')">Anotações</button>
+    </div>
+
+
+    <script>
+            function MenuUm(evt, cityName) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(cityName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+
+            function MenuDois(evt, cityName) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(cityName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+    </script>
+
+
+</body>
+</html>

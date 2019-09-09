@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script>
+    
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == modal) {
+    modal.style.display = "none";
+    }
+}
+    </script>
+</head>
+<body>
+    <section>
+        <div class="divisao">
+            <nav>
+                <ul type="none">
+                    <li class="paragraf" type="none"><label>Usuário</label></li>
+                    <li class="input" type="none"><input type="login" id="email"/></li>
+                    <li class="paragraf" type="none"><label>Senha</label></li> 
+                    <li class="input" type="none"><input type="pswrd" id="mypwd"/></li>
+                    <li type="none"><button class="conectar" type="submit" onclick="location.href='home.html'">Conectar</button></li>
+                    <li class="paragraf" type="none"><a href="">Esqueceu sua Senha?</a></li>
+                    <li class="paragraf" type="none"><a href="">Alterar sua Senha?</a></li>
+                 </ul>
+            </nav>
+        </div>
+
+       
+
+        <div class="divisao">
+
+        </div>
+    </section>
+</body>
+</html>
